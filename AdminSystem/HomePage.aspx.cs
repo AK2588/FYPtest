@@ -16,6 +16,7 @@ public partial class _1_ConfirmDelete : System.Web.UI.Page
     protected void btnOrderPage_Click(object sender, EventArgs e)
     {
         Response.Redirect("Practice1.aspx");
+
     }
 
     protected void btnStockPage_Click(object sender, EventArgs e)
