@@ -26,7 +26,7 @@
 
     <form id="form1" runat="server">
 
-        <div class="data-row">
+            <div class="data-row">
             <br />
             <br />
             <br />
@@ -44,19 +44,19 @@
             <br />
             <br />
 
-        <div class="data-row">
+            <div class="data-row">
             Search a Game Name&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtFilter" runat="server" CssClass="data-textbox"></asp:TextBox>
         
             <asp:Button ID="btnApply" runat="server" OnClick="btnApply_Click" Text="Search" CssClass="data-button" />
             <asp:Button ID="btnClear" runat="server" OnClick="btnClear_Click" Text="Clear" CssClass="data-button" />
-        </div>
+            </div>
 
             <br />
             <br />
 
-        <div class="data-row">
-            <asp:Label ID="lblError" runat="server" Text="[lblError]" CssClass="data-button"></asp:Label>
-        </div>
+            <div class="data-row">
+            <asp:Label ID="lblError" runat="server" Text="" CssClass="data-button"></asp:Label>
+            </div>
             <br />
             <br />
       
