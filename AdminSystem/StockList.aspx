@@ -4,30 +4,62 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+<link rel="stylesheet" href="styles.css"/>
+    <title>Stock</title>
 </head>
 <body>
+
+
+    <header>
+        <img class="logo" src="images/StarlightLogo.png" alt="logo" />
+        <nav>
+          <ul class="nav__links">
+            <li><a href="MainHome.aspx" id="homebtn">Home</a></li>
+            <li><a href="Practice1.aspx" id="orderbtn">Order</a></li>
+            <li><a href="StockList.aspx" id="stockbtn">Stock</a></li>
+            <li><a href="StaffList.aspx" id="staffbtn">Staff</a></li>
+            <li><a href="CustomerList.aspx" id="customerbtn">Customer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
     <form id="form1" runat="server">
-        <div>
-            <asp:ListBox ID="lstStockList" runat="server" Height="472px" Width="440px"></asp:ListBox>
-            <br />
-            <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" />
-            <asp:Button ID="btnEdit" runat="server" OnClick="btnEdit_Click" Text="Edit" />
-            <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete" />
+
+        <div class="data-row">
             <br />
             <br />
-            Enter a Game Name
-            <asp:TextBox ID="txtFilter" runat="server"></asp:TextBox>
+            <br />
+            <asp:ListBox ID="lstStockList" runat="server" Height="472px" Width="440px" CssClass="data-list"></asp:ListBox>
+            </div>
+
+            <br />
+
+            <div class="data-row">
+            <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" CssClass="data-button" />
+            <asp:Button ID="btnEdit" runat="server" OnClick="btnEdit_Click" Text="Edit" CssClass="data-button" />
+            <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete" CssClass="data-button" />
+            </div>
+
             <br />
             <br />
-            <asp:Button ID="btnApply" runat="server" OnClick="btnApply_Click" Text="Apply" />
-            <asp:Button ID="btnClear" runat="server" OnClick="btnClear_Click" Text="Clear" />
-            <br />
-            <br />
-            <asp:Label ID="lblError" runat="server" Text="[lblError]"></asp:Label>
-            <br />
-            <br />
+
+        <div class="data-row">
+            Search a Game Name&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtFilter" runat="server" CssClass="data-textbox"></asp:TextBox>
+        
+            <asp:Button ID="btnApply" runat="server" OnClick="btnApply_Click" Text="Search" CssClass="data-button" />
+            <asp:Button ID="btnClear" runat="server" OnClick="btnClear_Click" Text="Clear" CssClass="data-button" />
         </div>
+
+            <br />
+            <br />
+
+        <div class="data-row">
+            <asp:Label ID="lblError" runat="server" Text="[lblError]" CssClass="data-button"></asp:Label>
+        </div>
+            <br />
+            <br />
+      
     </form>
 </body>
 </html>
