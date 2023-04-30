@@ -141,6 +141,14 @@ h2 {
     
 }
 
+.data-col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .data-button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
