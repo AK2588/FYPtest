@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <img class="logo" src="StarlightLogo.png" alt="logo" />
+        <img class="logo" src="images/StarlightLogo.png" alt="logo" />
         <nav>
           <ul class="nav__links">
             <li><a href="MainHome.aspx" id="homebtn">Home</a></li>
@@ -26,37 +26,28 @@
 <form runat="server">
     
 
-    <p class="centre">
-     <asp:Button ID="btnOrderPage" runat="server" Text="Order" OnClick="btnOrderPage_Click" CssClass="button"/>
-     <asp:Button ID="btnStockPage" runat="server" Text="Stock" OnClick="btnStockPage_Click" CssClass="button"/>
-     
-    <br /><br />
+    <div class="main-home">
+    <div class="main-home-col">
+        <h2>Order</h2>
+        <asp:ImageButton ID="ImageButtonOrder" runat="server" CssClass="img-btn" ImageUrl="~/images/home-main.jpg" OnClick="btnOrderPage_Click" />
+    </div>
 
-     <asp:Button ID="btnEmployeePage" runat="server" Text="Employee" OnClick="btnEmployeePage_Click" CssClass="button"/>
-     <asp:Button ID="btnCustomerPage" runat="server" Text="Customer" OnClick="btnCustomerPage_Click" CssClass="button"/>
-     
-    <br /><br />
+    <div class="main-home-col">
+        <h2>Stock</h2>
+        <asp:ImageButton ID="ImageButton4" runat="server" CssClass="img-btn" ImageUrl="~/images/stock-main.jpg" OnClick="btnStockPage_Click" />
+    </div>
 
-     <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="button"/>
-   
-    </p>
+    <div class="main-home-col">
+        <h2>Staff</h2>
+        <asp:ImageButton ID="ImageButton1" runat="server" CssClass="img-btn" ImageUrl="~/images/staff-main.jpg" OnClick="btnEmployeePage_Click" />
+    </div>
 
+    <div class="main-home-col">
+        <h2>Customer</h2>
+        <asp:ImageButton ID="ImageButton2" runat="server" CssClass="img-btn" ImageUrl="~/images/customer-main.jpg" OnClick="btnCustomerPage_Click" />
+    </div>
 
-
-    <p class="main-home-col">
-        <br />
-        <asp:ImageButton ID="ImageButtonOrder" runat="server" CssClass="img-btn" ImageUrl="~/images/home-main2.png" OnClick="btnOrderPage_Click" />
-        <asp:ImageButton ID="ImageButtonStock" runat="server" CssClass="img-btn" ImageUrl="~/images/stock-main.jpg" />
-        <asp:ImageButton ID="ImageButtonStaff" runat="server" CssClass="img-btn" ImageUrl="~/images/staff-main.jpg" />
-        <asp:ImageButton ID="ImageButtonCustomer" runat="server" CssClass="img-btn" ImageUrl="~/images/customer-main.jpg" />
-        <br /><br />
-    </p>
-
-    <p class="main-home-col">
-        
-        <asp:ImageButton ID="ImageButton5" runat="server" CssClass="img-btn" ImageUrl="~/images/logout-main.jpg" />
-
-    </p>
+    </div>
 
 
 
