@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+<link rel="stylesheet" href="styles.css"/>
 
     <script>
         function printpage() {
@@ -11,39 +12,24 @@
         }
     </script>
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 65%;
-            height: 142px;
-            background-color: #CCCCCC;
-        }
-        .auto-style2 {
-            width: 87px;
-        }
-        .auto-style3 {
-            width: 312px;
-        }
-        .auto-style4 {
-            width: 238px;
-        }
-        .auto-style5 {
-            width: 87px;
-            text-align: center;
-        }
-        .auto-style6 {
-            width: 312px;
-            text-align: center;
-        }
-        .auto-style7 {
-            width: 238px;
-            text-align: center;
-        }
-        .auto-style8 {
-            text-align: center;
-        }
-    </style>
+    
 </head>
 <body>
+
+    <header>
+        <img class="logo" src="images/StarlightLogo.png" alt="logo" />
+        <nav>
+          <ul class="nav__links">
+            <li><a href="MainHome.aspx" id="homebtn">Home</a></li>
+            <li><a href="Practice1.aspx" id="orderbtn">Order</a></li>
+            <li><a href="StockList.aspx" id="stockbtn">Stock</a></li>
+            <li><a href="StaffList.aspx" id="staffbtn">Staff</a></li>
+            <li><a href="CustomerList.aspx" id="customerbtn">Customer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
     <form id="form1" runat="server">
         <div>
             
@@ -57,34 +43,34 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:TextBox ID="TextBox1" runat="server" Height="32px" Width="97px" style="text-align: center"></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" Height="32px" Width="97px" style="text-align: center" CssClass="data-textbox"></asp:TextBox>
                     </td>
                     <td class="auto-style3">
-                        <asp:TextBox ID="TextBox2" runat="server" Height="35px" Width="264px" style="text-align: center"></asp:TextBox>
+                        <asp:TextBox ID="TextBox2" runat="server" Height="35px" Width="264px" style="text-align: center" CssClass="data-textbox"></asp:TextBox>
                     </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox3" runat="server" Height="33px" Width="217px" style="text-align: center"></asp:TextBox>
+                        <asp:TextBox ID="TextBox3" runat="server" Height="33px" Width="217px" style="text-align: center" CssClass="data-textbox"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox4" runat="server" Height="32px" Width="136px" style="text-align: center"></asp:TextBox>
+                        <asp:TextBox ID="TextBox4" runat="server" Height="32px" Width="136px" style="text-align: center" CssClass="data-textbox"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="4">
-                        <asp:Button ID="Button3" runat="server" OnClick="btnFind_Click" BackColor="#FFCC00" Height="27px" Text="Find" Width="103px" />
-                        <asp:Button ID="Button1" runat="server" BackColor="#FFCC00" Height="27px" Text="Add Data" Width="103px" OnClick="Button1_Click" />
+                        <asp:Button ID="Button3" runat="server" OnClick="btnFind_Click" BackColor="Black" Height="27px" Text="Find" Width="103px" ForeColor="White" />
+                        <asp:Button ID="Button1" runat="server" BackColor="Black" Height="27px" Text="Add Data" Width="103px" OnClick="Button1_Click" ForeColor="White" />
                     </td>
                 </tr>
             </table>
         </div>
         <p>
             &nbsp;</p>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" ShowFooter="True">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" ShowFooter="True" CssClass="order-grid">
             <Columns>
-                <asp:BoundField DataField="sno" HeaderText="S.No">
+                <asp:BoundField DataField="sno" HeaderText="ID">
                 <ItemStyle HorizontalAlign="Center" Width="100px" />
                 </asp:BoundField>
-                <asp:BoundField DataField="productname" HeaderText="Product Name">
+                <asp:BoundField DataField="productname" HeaderText="Name">
                 <ItemStyle HorizontalAlign="Center" Width="200px" />
                 </asp:BoundField>
                 <asp:BoundField DataField="quantity" HeaderText="Quantity">
@@ -121,7 +107,7 @@
 
         <br />
         <br />
-        <asp:Button ID="Button2" runat="server" Text="Print"  OnClientClick="printpage()"/>
+        <asp:Button ID="Button2" runat="server" Text="Print"  OnClientClick="printpage()" CssClass="data-button"/>
 
 
 
