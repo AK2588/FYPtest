@@ -4,27 +4,91 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+<link rel="stylesheet" href="styles.css"/>
+
+    <title>Customer</title>
 </head>
 <body>
+
+
+    <header>
+        <img class="logo" src="images/StarlightLogo.png" alt="logo" />
+        <nav>
+          <ul class="nav__links">
+            <li><a href="MainHome.aspx" id="homebtn">Home</a></li>
+            <li><a href="Practice1.aspx" id="orderbtn">Order</a></li>
+            <li><a href="StockList.aspx" id="stockbtn">Stock</a></li>
+            <li><a href="StaffList.aspx" id="staffbtn">Staff</a></li>
+            <li><a href="CustomerList.aspx" id="customerbtn">Customer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+
     <form id="form1" runat="server">
-        <div>
-            <asp:TextBox ID="txtCustomerNo" runat="server" style="z-index: 1; left: 136px; top: 33px; position: absolute"></asp:TextBox>
+    <div class="data-col">    
+        
+        <div class="data-row">
+        <asp:Label ID="lblCustomerNo" runat="server" Text="Customer ID"></asp:Label>
+        <asp:TextBox ID="txtCustomerNo" runat="server" CssClass="data-textbox"></asp:TextBox>
+        <asp:Button ID="btnFind" runat="server" OnClick="btnFind_Click" Text="Find" CssClass="data-button"/>
         </div>
-        <asp:Label ID="lblCustomerNo" runat="server" style="z-index: 1; left: 10px; top: 35px; position: absolute; bottom: 623px" Text="Customer Number"></asp:Label>
-        <asp:Label ID="lblUsername" runat="server" style="z-index: 1; left: 11px; top: 64px; position: absolute" Text="Username" width="113px"></asp:Label>
-        <asp:TextBox ID="txtCustomerUsername" runat="server" style="z-index: 1; left: 136px; top: 62px; position: absolute"></asp:TextBox>
-        <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 11px; top: 91px; position: absolute" Text="Password" width="113px"></asp:Label>
-        <asp:TextBox ID="txtCustomerPassword" runat="server" style="z-index: 1; left: 136px; top: 88px; position: absolute"></asp:TextBox>
-        <asp:Label ID="lblCustomerAddress" runat="server" style="z-index: 1; left: 11px; top: 125px; position: absolute" Text="Address" width="113px"></asp:Label>
-        <asp:TextBox ID="txtCustomerAddress" runat="server" style="z-index: 1; left: 136px; top: 122px; position: absolute"></asp:TextBox>
-        <asp:Label ID="lblDateAdded" runat="server" style="z-index: 1; left: 11px; top: 157px; position: absolute" Text="Date Added" width="113px"></asp:Label>
-        <asp:TextBox ID="txtCustomerDateAdded" runat="server" style="z-index: 1; left: 135px; top: 155px; position: absolute"></asp:TextBox>
-        <asp:CheckBox ID="cbxCustomerActive" runat="server" style="z-index: 1; left: 7px; top: 185px; position: absolute" Text="Active" />
-        <asp:Label ID="lblError" runat="server" style="z-index: 1; left: 10px; top: 225px; position: absolute"></asp:Label>
-        <asp:Button ID="btnOK" runat="server" OnClick="btnOK_Click" style="z-index: 1; left: 10px; top: 266px; position: absolute" Text="OK" />
-        <asp:Button ID="btnCancel" runat="server" style="z-index: 1; left: 56px; top: 266px; position: absolute" Text="Cancel" OnClick="btnCancel_Click" />
-        <asp:Button ID="btnFind" runat="server" OnClick="btnFind_Click" style="z-index: 1; left: 288px; top: 32px; position: absolute" Text="Find" />
+
+        <br />
+        
+        <div class="data-row">
+        <asp:Label ID="lblUsername" runat="server" Text="Name"></asp:Label>
+        <asp:TextBox ID="txtCustomerUsername" runat="server" CssClass="data-textbox"></asp:TextBox>
+        </div>
+
+        <br />
+
+        <div class="data-row">
+        <asp:Label ID="Label1" runat="server" Text="Password" ></asp:Label>
+        <asp:TextBox ID="txtCustomerPassword" runat="server" CssClass="data-textbox"></asp:TextBox>
+        </div>
+
+        <br />
+        
+        <div class="data-row">
+        <asp:Label ID="lblCustomerAddress" runat="server" Text="Postcode"></asp:Label>
+        <asp:TextBox ID="txtCustomerAddress" runat="server" CssClass="data-textbox"></asp:TextBox>
+        </div>
+
+        <br />
+
+        <div class="data-row">
+        <asp:Label ID="lblDateAdded" runat="server" Text="Date Added"></asp:Label>
+        <asp:TextBox ID="txtCustomerDateAdded" runat="server" CssClass="data-textbox"></asp:TextBox>
+        </div>
+
+        <br />
+
+        <div class="data-row">
+        <asp:CheckBox ID="cbxCustomerActive" runat="server" Text="Active" />
+        </div>
+        
+        <br />
+
+        <div class="data-row">
+        <asp:Button ID="btnOK" runat="server" OnClick="btnOK_Click" Text="OK" CssClass="data-button"/>
+        <asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" Text="Cancel" CssClass="data-button"/>
+        
+        </div>
+
+        <br />
+
+        <asp:Label ID="lblError" runat="server" ></asp:Label>
+
+
+
+
+
+    </div>
     </form>
 </body>
 </html>
