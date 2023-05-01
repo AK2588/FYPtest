@@ -4,12 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
+    <script>
+        function printpage() {
+            window.print()
+        }
+    </script>
     <title></title>
     <style type="text/css">
         .auto-style1 {
             width: 65%;
             height: 142px;
-            background-color: #66FFCC;
+            background-color: #CCCCCC;
         }
         .auto-style2 {
             width: 87px;
@@ -40,16 +46,12 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" Text="Order Page"></asp:Label>
-            <br />
-            <br />
-            <asp:Label ID="Label2" runat="server" ForeColor="#FF3300" Text="Calculate Total Amount Using gridView , DataTable in Asp.Net c#"></asp:Label>
-            <br />
+            
             <br />
             <table border="1" class="auto-style1">
                 <tr>
-                    <td class="auto-style5">S No</td>
-                    <td class="auto-style6">Product Name</td>
+                    <td class="auto-style5">ID</td>
+                    <td class="auto-style6">Item Name</td>
                     <td class="auto-style7">Price</td>
                     <td class="auto-style8">Quantity</td>
                 </tr>
@@ -69,6 +71,7 @@
                 </tr>
                 <tr>
                     <td colspan="4">
+                        <asp:Button ID="Button3" runat="server" OnClick="btnFind_Click" BackColor="#FFCC00" Height="27px" Text="Find" Width="103px" />
                         <asp:Button ID="Button1" runat="server" BackColor="#FFCC00" Height="27px" Text="Add Data" Width="103px" OnClick="Button1_Click" />
                     </td>
                 </tr>
@@ -106,6 +109,29 @@
         </asp:GridView>
         <br />
         <asp:Label ID="Label3" runat="server"></asp:Label>
+
+
+
+
+
+
+
+
+
+
+        <br />
+        <br />
+        <asp:Button ID="Button2" runat="server" Text="Print"  OnClientClick="printpage()"/>
+
+
+
+
+
+
+
+
+
+
     </form>
 </body>
 </html>
