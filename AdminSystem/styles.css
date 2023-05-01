@@ -185,3 +185,12 @@ h2 {
     background-color: #ffffff;
     border-radius: 50px;
 }
+
+.order-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-grid {
+    color: #ffffff
+}
