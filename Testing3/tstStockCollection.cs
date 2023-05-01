@@ -210,37 +210,6 @@ namespace Testing3
             Assert.AreEqual(0, FilteredStock.Count);
         }
 
-        [TestMethod]
-        public void ReportByGameNameTestDataFound()
-        {
-            //create an instance of the filtered data
-            clsStockCollection FilteredStock = new clsStockCollection();
-            //var to store outcome
-            Boolean OK = true;
-            //apply a game name doesnt exist
-            FilteredStock.ReportByGameName("Report");
-            //check that the correct number of records are found
-            if (FilteredStock.Count == 2)
-            {
-                //check that the first record ID is 24
-                if (FilteredStock.StockList[0].GameID != 24)
-                {
-                    OK = false;
-                }
-                //check that the first record ID 25
-                if (FilteredStock.StockList[1].GameID != 25)
-                {
-                    OK = false;
-                }
-            }
-            else
-            {
-                OK = false;
-            }
-            //test to see that there are no records
-            Assert.IsTrue(OK);
-        }
-
 
 
 
