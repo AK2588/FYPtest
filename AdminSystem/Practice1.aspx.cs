@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using ClassLibrary;
 
 public partial class Practice1 : System.Web.UI.Page
 {
@@ -114,4 +115,37 @@ public partial class Practice1 : System.Web.UI.Page
         }
         return words;
     }
+
+    protected void btnFind_Click(object sender, EventArgs e)
+    {
+        //create an instance of the stock class
+        clsStock AnStock = new clsStock();
+        //variable to store the primary key
+        Int32 GameID;
+        //variable to store the result of the find operation
+        Boolean Found = false;
+        //get the primary key entered by the user
+        GameID = Convert.ToInt32(TextBox1.Text);
+        //find the record
+        Found = AnStock.Find(GameID);
+        //if found
+        if (Found == true)
+        {
+            //display the values of the properties in the form
+            TextBox1.Text = Convert.ToString(AnStock.GameID);
+            TextBox2.Text = AnStock.GameName;
+            TextBox3.Text = Convert.ToString(AnStock.Price);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
