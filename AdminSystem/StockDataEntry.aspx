@@ -32,9 +32,6 @@
             <div class="data-row">
             <asp:Label ID="lblGameID" runat="server" Text="Game ID" width="118px"></asp:Label>
             &nbsp;<asp:TextBox ID="txtGameID" runat="server" Width="134px" CssClass="data-textbox"></asp:TextBox>
-            </div>
-            
-            <div class="data-row">
             <asp:Button ID="btnFind" runat="server" OnClick="btnFind_Click" Text="Find" CssClass="data-button" />
             </div>
             
@@ -42,14 +39,14 @@
 
             <div class="data-row">
             <asp:Label ID="lblGameName" runat="server" Text="Game Name" width="118px"></asp:Label>
-            &nbsp;<asp:TextBox ID="txtGameName" runat="server" width="134px" CssClass="data-textbox"></asp:TextBox>
+            &nbsp;<asp:TextBox ID="txtGameName" runat="server" width="217px" CssClass="data-textbox"></asp:TextBox>
             </div>
             
             <br />
 
             <div class="data-row">
             <asp:Label ID="lblPrice" runat="server" Text="Price" width="118px"></asp:Label>
-            &nbsp;<asp:TextBox ID="txtPrice" runat="server" width="134px" CssClass="data-textbox"></asp:TextBox>
+            &nbsp;<asp:TextBox ID="txtPrice" runat="server" width="210px" CssClass="data-textbox"></asp:TextBox>
             </div>
             
             <br />
@@ -62,14 +59,14 @@
 
             <div class="data-row">
             <asp:Label ID="lblReleaseDate" runat="server" Text="Release Date" width="118px"></asp:Label>
-            &nbsp;<asp:TextBox ID="txtReleaseDate" runat="server" width="134px" CssClass="data-textbox"></asp:TextBox>
+            &nbsp;<asp:TextBox ID="txtReleaseDate" runat="server" width="214px" CssClass="data-textbox"></asp:TextBox>
             </div>
             
             <br />
 
             <div class="data-row">
             <asp:Label ID="lblAgeRating" runat="server" Text="Age Rating" width="118px"></asp:Label>
-            &nbsp;<asp:TextBox ID="txtAgeRating" runat="server" width="134px" CssClass="data-textbox"></asp:TextBox>
+            &nbsp;<asp:TextBox ID="txtAgeRating" runat="server" width="211px" CssClass="data-textbox"></asp:TextBox>
             </div>
             
             <br />
