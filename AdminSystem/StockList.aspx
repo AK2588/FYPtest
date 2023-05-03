@@ -17,7 +17,6 @@
             <li><a href="MainHome.aspx" id="homebtn">Home</a></li>
             <li><a href="Practice1.aspx" id="orderbtn">Order</a></li>
             <li><a href="StockList.aspx" id="stockbtn">Stock</a></li>
-            <li><a href="StaffList.aspx" id="staffbtn">Staff</a></li>
             <li><a href="CustomerList.aspx" id="customerbtn">Customer</a></li>
         </ul>
       </nav>
@@ -37,7 +36,6 @@
 
             <div class="data-row">
             <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" CssClass="data-button" />
-            <asp:Button ID="btnEdit" runat="server" OnClick="btnEdit_Click" Text="Edit" CssClass="data-button" />
             <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete" CssClass="data-button" />
             </div>
 
