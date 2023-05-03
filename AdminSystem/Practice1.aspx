@@ -23,7 +23,6 @@
             <li><a href="MainHome.aspx" id="homebtn">Home</a></li>
             <li><a href="Practice1.aspx" id="orderbtn">Order</a></li>
             <li><a href="StockList.aspx" id="stockbtn">Stock</a></li>
-            <li><a href="StaffList.aspx" id="staffbtn">Staff</a></li>
             <li><a href="CustomerList.aspx" id="customerbtn">Customer</a></li>
         </ul>
       </nav>
@@ -73,10 +72,10 @@
                 <asp:BoundField DataField="productname" HeaderText="Name">
                 <ItemStyle HorizontalAlign="Center" Width="200px" />
                 </asp:BoundField>
-                <asp:BoundField DataField="quantity" HeaderText="Quantity">
+                <asp:BoundField DataField="quantity" HeaderText="Price">
                 <ItemStyle HorizontalAlign="Center" Width="100px" />
                 </asp:BoundField>
-                <asp:BoundField DataField="price" HeaderText="Price">
+                <asp:BoundField DataField="price" HeaderText="Quantity">
                 <ItemStyle HorizontalAlign="Center" Width="100px" />
                 </asp:BoundField>
                 <asp:BoundField DataField="Total" HeaderText="Total">

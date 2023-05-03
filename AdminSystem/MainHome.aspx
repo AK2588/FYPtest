@@ -18,7 +18,6 @@
             <li><a href="MainHome.aspx" id="homebtn">Home</a></li>
             <li><a href="Practice1.aspx" id="orderbtn">Order</a></li>
             <li><a href="StockList.aspx" id="stockbtn">Stock</a></li>
-            <li><a href="StaffList.aspx" id="staffbtn">Staff</a></li>
             <li><a href="CustomerList.aspx" id="customerbtn">Customer</a></li>
         </ul>
       </nav>
@@ -35,11 +34,6 @@
     <div class="main-home-col">
         <h2>Stock</h2>
         <asp:ImageButton ID="ImageButton4" runat="server" CssClass="img-btn" ImageUrl="~/images/stock-main.jpg" OnClick="btnStockPage_Click" />
-    </div>
-
-    <div class="main-home-col">
-        <h2>Staff</h2>
-        <asp:ImageButton ID="ImageButton1" runat="server" CssClass="img-btn" ImageUrl="~/images/staff-main.jpg" OnClick="btnEmployeePage_Click" />
     </div>
 
     <div class="main-home-col">

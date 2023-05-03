@@ -18,7 +18,6 @@
             <li><a href="MainHome.aspx" id="homebtn">Home</a></li>
             <li><a href="Practice1.aspx" id="orderbtn">Order</a></li>
             <li><a href="StockList.aspx" id="stockbtn">Stock</a></li>
-            <li><a href="StaffList.aspx" id="staffbtn">Staff</a></li>
             <li><a href="CustomerList.aspx" id="customerbtn">Customer</a></li>
         </ul>
       </nav>
