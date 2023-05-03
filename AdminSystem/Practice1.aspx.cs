@@ -138,7 +138,34 @@ public partial class Practice1 : System.Web.UI.Page
         }
     }
 
+    protected void btnFind2_Click(object sender, EventArgs e)
+    {
+        // Create an instance of customer class
+        clsCustomer ACustomer = new clsCustomer();
+        // variable to store primray key
+        Int32 CustomerID;
+        // var to store result of find oper
+        Boolean Found = false;
+        // Get primary key entered
 
+        try
+        {
+            CustomerID = Convert.ToInt32(txtCustomerNo.Text);
+        }
+        catch (FormatException ex)
+        {
+            return;
+        }
+
+        // find record
+        Found = ACustomer.Find(CustomerID);
+        // if found
+        if (Found == true)
+        {
+            // display values o fproperties in form
+            txtCustomerUsername.Text = ACustomer.Username;
+        }
+    }
 
 
 

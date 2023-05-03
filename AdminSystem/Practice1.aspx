@@ -30,6 +30,15 @@
 
 
     <form id="form1" runat="server">
+        
+        
+        <asp:Label ID="lblCustomerNo" runat="server" Text="Customer ID"></asp:Label>
+        <asp:TextBox ID="txtCustomerNo" runat="server" CssClass="data-textbox"></asp:TextBox>
+        <asp:TextBox ID="txtCustomerUsername" runat="server" CssClass="data-textbox"></asp:TextBox>
+        <asp:Button ID="btnFind" runat="server" OnClick="btnFind2_Click" Text="Find" CssClass="data-button"/>
+        
+        
+        
         <div>
             
             <br />
@@ -57,7 +66,7 @@
                 <tr>
                     <td colspan="4">
                         <asp:Button ID="Button3" runat="server" OnClick="btnFind_Click" BackColor="Black" Height="27px" Text="Find" Width="103px" ForeColor="White" />
-                        <asp:Button ID="Button1" runat="server" BackColor="Black" Height="27px" Text="Add Data" Width="103px" OnClick="Button1_Click" ForeColor="White" />
+                        <asp:Button ID="Button1" runat="server" BackColor="Black" Height="27px" Text="Add Item" Width="103px" OnClick="Button1_Click" ForeColor="White" />
                     </td>
                 </tr>
             </table>
